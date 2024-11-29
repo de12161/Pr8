@@ -1,4 +1,4 @@
-internal class StickPhilsosopher(private val name: String, private val seat: Int) : IPhilosopher {
+internal class StickPhilosopher(private val name: String, private val seat: Int) : IPhilosopher {
     override fun takeUtensil(utensils: MutableList<Boolean>) {
         val rightIndex = seat.mod(utensils.size)
         val leftIndex = (seat + 1).mod(utensils.size)
